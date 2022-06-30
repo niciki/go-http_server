@@ -57,5 +57,5 @@ func main() {
 	router.DELETE("/department/:id", handler.DeleteFuncDepartment)
 	// Delete all departments
 	router.DELETE("/department", handler.DeleteFuncDepartmensALL)
-	router.Run(":8084")
+	router.Run(":8080")
 }
