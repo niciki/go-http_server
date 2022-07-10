@@ -26,7 +26,7 @@ func (db *Database) Add(e *Employee) error {
 	db.length++
 	_, err := db.collection.InsertOne(context.TODO(), *e)
 	if err != nil {
-		log.Fatal("Error during insert employee in database")
+		log.Fatal("error during insert employee in database")
 	}
 	return nil
 }
